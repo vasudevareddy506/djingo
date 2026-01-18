@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student gegistered form</title>
+</head>
+<body>
+    <h1>student register form</h1>
+    <form method="post">
+        {% csrf_token %}
+        Name:<input type="text" id="name" name="name"><br>
+        USN:<input type="text" id="usn" name="usn"><br>
+        Mob:<input type="tel" id="mob" name="mob"><br>
+        Email:<input type="email" id="email" name="email"><br>
+        College:<input type="text" id="college" name="college"><br>
+        Degree:<input type="text" id="degree" name="degree"><br>
+        Sem:<input type="num" id="sem" name="sem"><br>
+        Branch:<input type="text" id="branch" name="branch">
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

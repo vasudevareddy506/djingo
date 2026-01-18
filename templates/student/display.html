@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student list</title>
+</head>
+<body>
+    <h1>student details</h1>
+    Student Name: {{ name }}<br>
+    USN: {{ usn }}<br>
+    Mobile: {{ mobile }}<br>
+    Email: {{ email }}<br>
+    College: {{ college }}<br>
+    Degree: {{ degree }}<br>
+    Semester: {{ sem }}<br>
+    Branch: {{ branch }}<br>
+    Dept:
+    <ul>
+        {% for dept in dept %}
+            <li>{{ dept }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
